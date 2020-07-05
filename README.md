@@ -6,7 +6,7 @@ It's useless but I still learned something by creating this </br>
 Feel free to use this script(I doubt that someone will use it :/) </br>
 </br>
 </br>
-![alt text](https://imgur.com/a/R0p2nTC)</br>
+![alt text](https://imgur.com/V0mkhxl)</br>
 Works on Termux and Linux</br>
 <p>Installing</p>
 <p>git clone https://github.com/GluhaiaMuha/pinger.git</p>
