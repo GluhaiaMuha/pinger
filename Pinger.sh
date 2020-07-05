@@ -48,5 +48,5 @@ read -p "Choose an option: " option
 		ping $Ipaddress -s 65507
 	else 
 		printf "\e[1;70m\e[30m I need root Privileges for this Option \e[0m\n"
-		sudo nmap -vv --mtu 24 -p- $Ipaddress
+		sudo nmap -vv -sV --mtu 24 -p- $Ipaddress
 	fi 
