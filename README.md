@@ -7,7 +7,7 @@ Feel free to use this script(I doubt that someone will use it :/) </br>
 </br>
 </br>
 </br>
-<img scr=Pinger.png>
+<img scr=https://imgur.com/a/R0p2nTC>
 Works on Termux and Linux
 <p>Installing</p>
 <p>git clone https://github.com/GluhaiaMuha/pinger.git</p>
