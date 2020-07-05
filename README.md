@@ -7,7 +7,7 @@ Feel free to use this script(I doubt that someone will use it :/) </br>
 </br>
 </br>
 </br>
-<p style="color:blue;font-size:18px;">Installing</p>
+<p>Installing</p>
 <p style="color:blue;font-size:18px;">git clone https://github.com/GluhaiaMuha/pinger.git</p>
 <p style="color:blue;font-size:18px;">cd pinger</p>
 <p style="color:blue;font-size:18px;">chmod +x Pinger.sh</p>
