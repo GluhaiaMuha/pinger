@@ -8,8 +8,8 @@ Feel free to use this script(I doubt that someone will use it :/) </br>
 </br>
 </br>
 <p>Installing</p>
-<p style="color:blue;font-size:18px;">git clone https://github.com/GluhaiaMuha/pinger.git</p>
-<p style="color:blue;font-size:18px;">cd pinger</p>
-<p style="color:blue;font-size:18px;">chmod +x Pinger.sh</p>
-<p style="color:blue;font-size:18px;">./Pinger.sh</p>
+<p>git clone https://github.com/GluhaiaMuha/pinger.git</p>
+<p>cd pinger</p>
+<p>chmod +x Pinger.sh</p>
+<p>./Pinger.sh</p>
 
