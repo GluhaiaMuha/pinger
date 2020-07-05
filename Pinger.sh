@@ -32,6 +32,7 @@ menu()
 {
 echo "[1] Ping scan"
 echo "[2] Ping of Death"
+echo "[3] Nmap All Port Scan"
 echo ""
 }
 #Ping Scan
@@ -42,6 +43,10 @@ read -p "Choose an option: " option
 	if [[ $option == 1 ]] 
 	then
 		ping $Ipaddress
-	else
+	elif [[ $option == 2 ]]
+	then	
 		ping $Ipaddress -s 65507
+	else 
+		printf "\e[1;70m\e[30m I need root Privileges for this Option \e[0m\n"
+		sudo nmap -vv --mtu 24 -p- $Ipaddress
 	fi 
