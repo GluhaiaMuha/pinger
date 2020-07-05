@@ -1,4 +1,4 @@
-# pinger </br>
+# Pinger </br>
 Author Gluhaia_Muha </br>
 Made this just for learning bash scripting </br>
 Nothing advanced </br>
