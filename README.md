@@ -6,9 +6,8 @@ It's useless but I still learned something by creating this </br>
 Feel free to use this script(I doubt that someone will use it :/) </br>
 </br>
 </br>
-</br>
-<img scr="https://imgur.com/a/R0p2nTC">
-Works on Termux and Linux
+<img scr="https://imgur.com/a/R0p2nTC" width="24" height="39"> </br>
+Works on Termux and Linux</br>
 <p>Installing</p>
 <p>git clone https://github.com/GluhaiaMuha/pinger.git</p>
 <p>cd pinger</p>
