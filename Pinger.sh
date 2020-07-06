@@ -30,7 +30,7 @@ banner
 #Menu
 menu()
 {
-echo "[1] Ping scan"
+echo "[1] Ping a network"
 echo "[2] Ping of Death"
 echo "[3] Nmap All Port Scan"
 echo ""
