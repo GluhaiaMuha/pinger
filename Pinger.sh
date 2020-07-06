@@ -7,21 +7,21 @@
 #Banner
 banner() 
 {
-printf "\e[1;92m   _ _ _ _     _ _    _         _    _ _ _ _ _ _    _ _ _ _ _    _ _ _        \e[0m\n"
-printf "\e[1;92m  |   __   |  |   |  | \       | |  |  _ _ _ _  |  |         |  |   _ \       \e[0m\n"
-printf "\e[1;92m  |  |  |  |  |   |  |  \      | |  | |       | |  |  _ _ _ _|  |  | | \      \e[0m\n"
-printf "\e[1;92m  |  |__|  |  |   |  | | \     | |  | |       |_|  | |          |  |_|  \     \e[0m\n"
-printf "\e[1;92m  |   _ _ _|  |   |  | |\ \    | |  | |            | |_ _ _ _   |       /     \e[0m\n"
-printf "\e[1;92m  |  |        |   |  | | \ \   | |  | |            |         |  |      /      \e[0m\n"
-printf "\e[1;92m  |  |        |   |  | |  \ \  | |  | |  _ _ _ _   |  _ _ _ _|  |  |\  \      \e[0m\n"
-printf "\e[1;92m  |  |        |   |  | |   \ \ | |  | | |_ _ _  |  | |          |  | \  \     \e[0m\n"
-printf "\e[1;92m  |  |        |   |  | |    \ \| |  | |       | |  | |_ _ _ _   |  |  \  \    \e[0m\n"
-printf "\e[1;92m  |  |        |   |  | |     \   |  | |_ _ _ _| |  |         |  |  |   \  \   \e[0m\n"
-printf "\e[1;92m  |__|        |_ _|  |_|      \__|  |_ _ _ _ _ _|  |_ _ _ _ _|  |__|    \__\  \e[0m\n"
+printf "\e[033;31m   _ _ _ _     _ _    _         _    _ _ _ _ _ _    _ _ _ _ _    _ _ _        \e[0m\n"
+printf "\e[033;31m  |   __   |  |   |  | \       | |  |  _ _ _ _  |  |         |  |   _ \       \e[0m\n"
+printf "\e[033;31m  |  |  |  |  |   |  |  \      | |  | |       | |  |  _ _ _ _|  |  | | \      \e[0m\n"
+printf "\e[033;31m  |  |__|  |  |   |  | | \     | |  | |       |_|  | |          |  |_|  \     \e[0m\n"
+printf "\e[033;31m  |   _ _ _|  |   |  | |\ \    | |  | |            | |_ _ _ _   |       /     \e[0m\n"
+printf "\e[033;31m  |  |        |   |  | | \ \   | |  | |            |         |  |      /      \e[0m\n"
+printf "\e[033;31m  |  |        |   |  | |  \ \  | |  | |  _ _ _ _   |  _ _ _ _|  |  |\  \      \e[0m\n"
+printf "\e[033;31m  |  |        |   |  | |   \ \ | |  | | |_ _ _  |  | |          |  | \  \     \e[0m\n"
+printf "\e[033;31m  |  |        |   |  | |    \ \| |  | |       | |  | |_ _ _ _   |  |  \  \    \e[0m\n"
+printf "\e[033;31m  |  |        |   |  | |     \   |  | |_ _ _ _| |  |         |  |  |   \  \   \e[0m\n"
+printf "\e[033;31m  |__|        |_ _|  |_|      \__|  |_ _ _ _ _ _|  |_ _ _ _ _|  |__|    \__\  \e[0m\n"
 printf "\n"
-printf "\e[1;77m\e[44m Just A Simple Pinger That I Made To Learn Bash "
+printf "\e[1;41m\e[41m Just A Simple Pinger That I Made To Learn Bash "
 printf "\n"
-printf "\e[1;77m\e[44m Author: Gluhaia_Muha \e[0m\n"
+printf "\e[1;41m\e[41m Author: Gluhaia_Muha \e[0m\n"
 printf "\n"
 }
 
@@ -42,11 +42,11 @@ menu
 read -p "Choose an option: " option
 	if [[ $option == 1 ]] 
 	then
-		ping $Ipaddress
+		ping $Ipaddress                #Simple Ping
 	elif [[ $option == 2 ]]
 	then	
-		ping $Ipaddress -s 65507
+		ping $Ipaddress -s 65507       #Ping of Death
 	else 
-		printf "\e[1;70m\e[30m I need root Privileges for this Option \e[0m\n"
-		sudo nmap -vv -sV --mtu 24 -p- $Ipaddress
+		printf "\e[1;41m\e[41m I need root Privileges for this Option \e[0m\n"
+		sudo nmap -vv -sV --mtu 24 -p- $Ipaddress          #Nmap Ping Scan(passes simple firewalls)
 	fi 
