@@ -33,11 +33,13 @@ menu()
 echo "[1] Ping a network"
 echo "[2] Ping of Death"
 echo "[3] Nmap All Port Scan"
+echo "[4] Fast Port Scan with rustmap(must be installed)"
 echo ""
 }
 
 #Ping Scan
 read -p "Enter the IP address: " Ipaddress
+echo " "
 menu
 
 read -p "Choose an option: " option
@@ -53,4 +55,9 @@ read -p "Choose an option: " option
 	then
 		printf "\e[1;41m\e[41m I need root Privileges for this Option \e[0m\n"
 		sudo nmap -vv -sV --mtu 24 -p- $Ipaddress          #Nmap Ping Scan(passes simple firewalls)
+	elif [[ $option == 4 ]]
+	then 
+		rustscan $Ipaddress --ulimit 5000
+
 	fi 
+fi
